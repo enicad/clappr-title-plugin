@@ -1,0 +1,25 @@
+$font-color: #fff;
+
+.player-title[data-title] {
+  // position
+  background: linear-gradient(rgba(0, 0, 0, 0.9), transparent);
+  height: 25%;
+  padding: 5px 10px;
+  position: absolute;
+  top: 0;
+  transition: top 0.4s ease-out;
+  width: 100%;
+  z-index: 9999;
+
+  &.player-title-hide {
+    top: -25%;
+  }
+
+  // style
+  color: $font-color;
+  text-align: left;
+  font-family: "Roboto", "Open Sans", Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  outline: none;
+}
