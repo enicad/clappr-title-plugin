@@ -1,6 +1,6 @@
 {
   "name": "clappr-title-plugin",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A clappr plugin to display the title",
   "main": "dist/clappr-title-plugin.js",
   "dependencies": {},
