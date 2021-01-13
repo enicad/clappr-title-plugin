@@ -3,7 +3,9 @@
   "version": "1.1.0",
   "description": "A clappr plugin to display the title",
   "main": "dist/clappr-title-plugin.js",
-  "dependencies": {},
+  "dependencies": {
+    "core-js": "3.8.2"
+  },
   "devDependencies": {
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.10",
