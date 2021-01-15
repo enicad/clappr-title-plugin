@@ -2,6 +2,7 @@ const path = require('path');
 
 module.exports = {
   mode: 'production',
+  target: 'es5',
   entry: path.resolve(__dirname, 'src/index.js'),
   externals: {
     clappr: {
@@ -18,14 +19,7 @@ module.exports = {
         exclude: /node_modules/,
         loader: 'babel-loader',
         options: {
-          presets: [[
-            "@babel/preset-env",
-            {
-              targets: {
-                chrome: "38"
-              }
-            }
-          ]]
+          presets: ['@babel/preset-env']
         },
       },
       {
