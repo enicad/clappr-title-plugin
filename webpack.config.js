@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack')
 
 module.exports = {
   mode: 'production',
@@ -40,4 +41,9 @@ module.exports = {
       type: 'umd',
     },
   },
+  plugins: [
+    new webpack.DefinePlugin({
+      CLAPPR_CORE_VERSION: JSON.stringify(require("@clappr/core/package.json").version),
+    })
+  ],
 };
