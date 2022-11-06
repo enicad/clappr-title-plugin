@@ -3,6 +3,7 @@ import pluginStyle from './public/title.scss'
 
 export default class TitlePlugin extends UIContainerPlugin {
   get name() { return 'title' }
+  get supportedVersion() { return { min: CLAPPR_CORE_VERSION }; }
 
   get attributes() {
     return {
